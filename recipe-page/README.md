@@ -38,6 +38,6 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ## Author
 
-- CodePen - [@raubaca](https://codepen.io/raubaca)
 - LinkedIn - [Raúl Barrera](https://www.linkedin.com/in/raubaca/)
+- CodePen - [@raubaca](https://codepen.io/raubaca)
 - Frontend Mentor - [@raubaca](https://www.frontendmentor.io/profile/raubaca)

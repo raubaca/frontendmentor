@@ -1,0 +1,36 @@
+/* Settings */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(220, 15%, 55%);
+  --slate-900: hsl(218, 44%, 22%);
+  /* Font */
+  --font-family: 'Outfit', sans-serif;
+  --font-size: 15px;
+  --font-size-title: 22px;
+  /* Line height */
+  --lh: 1.4;
+  --lh-title: 1.2;
+  /* Letter spacing */
+  --ls: 0.2px;
+  /* Spacing */
+  --space: 24px;
+  --space-lg: 40px;
+  --space-sm: 16px;
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* General Styles */
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100dvh;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--slate-500);
+  background-color: var(--slate-300);
+}

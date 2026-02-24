@@ -49,7 +49,8 @@ I added the script at the body's end, but you can add the script in the `<head>`
 ### Useful resources
 
 - [Using custom elements
-  ](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) - Tutorial about custom elements
+  ](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) - Tutorial about custom elements on [MDN](https://developer.mozilla.org)
+- [Custom Elements v1 - Reusable Web Components](https://web.dev/articles/custom-elements-v1?hl=en) - Article about custom elements on [web.dev](web.dev)
 
 ## Author
 

@@ -1,0 +1,131 @@
+/* Settings */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --yellow: hsl(47, 88%, 63%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+  /* Font */
+  --font-family: 'Figtree', sans-serif;
+  --font-size: 14px;
+  --font-size-sm: 12px;
+  --font-size-lg: 20px;
+  /* Line Height */
+  --lh: 1.5;
+  /* Spacing */
+  --space: 24px;
+  --space-md: 12px;
+  --space-sm: 8px;
+  --space-xs: 4px;
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+html {
+  font-size: var(--font-size);
+}
+
+:is(h1, h2, h3) {
+  font-weight: 800;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100dvh;
+  padding: var(--space-md);
+  font-family: var(--font-family);
+  font-weight: 500;
+  line-height: var(--lh);
+  color: var(--gray-950);
+  background-color: var(--yellow);
+}
+
+/* Card Styles */
+.card {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-md);
+  max-width: 24rem;
+  padding: var(--space);
+  background-color: var(--white);
+  border: 1px solid var(--gray-950);
+  border-radius: 1.25rem;
+  box-shadow: var(--space-sm) var(--space-sm) var(--gray-950);
+}
+.card__image {
+  display: block;
+  width: 100%;
+  height: 14.2857rem;
+  object-fit: cover;
+  border-radius: var(--space-sm);
+}
+.card__category {
+  margin-block-start: var(--space-md);
+  padding: var(--space-xs) var(--space-md);
+  font-size: var(--font-size-sm);
+  background-color: var(--yellow);
+  border-radius: var(--space-xs);
+}
+.card__publish-date {
+  font-size: var(--font-size-sm);
+}
+.card__title {
+  font-size: var(--font-size-lg);
+  transition: color 0.2s ease;
+}
+.card__description {
+  color: var(--gray-500);
+}
+.card__author {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-block-start: var(--space-md);
+  .userpic {
+    width: 2rem;
+    aspect-ratio: 1;
+  }
+  .name {
+    font-size: var(--font-size);
+  }
+}
+
+/* Hover */
+@media (hover: hover) {
+  .card__title:hover {
+    color: var(--yellow);
+  }
+}
+
+/* Responsive adjustments */
+@media (width > 768px) {
+  :root {
+    --font-size: 16px;
+    --font-size-sm: 14px;
+    --font-size-lg: 24px;
+  }
+  .card__image {
+    height: 12.5rem;
+  }
+  .card__author .name {
+    font-size: var(--font-size-sm);
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .card__title {
+    transition-duration: 0.001ms;
+  }
+}

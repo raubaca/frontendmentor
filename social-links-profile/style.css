@@ -1,0 +1,103 @@
+/* Settings */
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+  /* Font */
+  --font-family: 'Inter', sans-serif;
+  --font-size: 14px;
+  --font-size-title: 24px;
+  /* Line Height */
+  --lh: 1.5;
+  --lh-title: 1.2;
+  /* Spacing */
+  --space: 24px;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+html {
+  font-size: var(--font-size);
+}
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
+  padding: 1rem;
+  font-family: var(--font-family);
+  line-height: var(--lh);
+  color: var(--white);
+  background-color: var(--grey-900);
+}
+
+/* Card Styles */
+.card {
+  width: min(100%, 27.5rem);
+  padding: var(--space);
+  text-align: center;
+  background-color: var(--grey-800);
+  border-radius: 1rem;
+  > *:not(img, address) {
+    margin-block-start: var(--space);
+  }
+}
+.userpic {
+  width: 6.2rem;
+  aspect-ratio: 1;
+  border-radius: 100%;
+}
+.fullname {
+  font-size: var(--font-size-title);
+  font-weight: 600;
+  line-height: var(--lh-title);
+}
+.location {
+  margin-block-start: 0.5rem;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--green);
+}
+.links {
+  ul {
+    list-style: none;
+  }
+  li:not(:first-child) {
+    margin-block-start: 1.07rem;
+  }
+  a {
+    display: block;
+    padding: 0.89rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: inherit;
+    background-color: var(--grey-700);
+    border-radius: 0.57rem;
+    transition: all 0.3s ease;
+    &:hover {
+      color: var(--grey-900);
+      background-color: var(--green);
+    }
+  }
+}
+
+/* Responsive adjustments */
+@media (width > 55rem) {
+  .card {
+    padding: 2.87rem;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .links a {
+    transition-duration: 0.001ms;
+  }
+}

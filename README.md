@@ -2,6 +2,8 @@
 
 Repository for challenges from [Frontend Mentor](https://github.com/frontendmentorio)
 
+## Projects
+
 | Project                        | Live Demo                                                                        |
 | ------------------------------ | -------------------------------------------------------------------------------- |
 | QR Code Component              | [Link](https://raubaca.github.io/frontendmentor/qr-code-component/)              |
@@ -10,3 +12,8 @@ Repository for challenges from [Frontend Mentor](https://github.com/frontendment
 | Product preview card component | [Link](https://raubaca.github.io/frontendmentor/product-preview-card-component/) |
 | Recipe Page                    | [Link](https://raubaca.github.io/frontendmentor/recipe-page/)                    |
 | Four card feature section      | [Link](https://raubaca.github.io/frontendmentor/four-card-feature-section/)      |
+
+## Resources
+
+- [PerfectPixel](https://www.welldonecode.com/perfectpixel/)
+- [ColorZilla](https://www.colorzilla.com/chrome/)

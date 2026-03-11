@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/testimonials-grid-using-tailwind-css-r7VTlWFXHp)
 - Live Site URL: [GitHub Pages](https://raubaca.github.io/frontendmentor/testimonials-grid-section/)
 
 ## My process

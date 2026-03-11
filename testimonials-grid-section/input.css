@@ -1,0 +1,54 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-purple-50: hsl(260, 100%, 95%);
+  --color-purple-300: hsl(264, 82%, 80%);
+  --color-purple-500: hsl(263, 55%, 52%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-100: hsl(214, 17%, 92%);
+  --color-grey-200: hsl(0, 0%, 81%);
+  --color-grey-400: hsl(224, 10%, 45%);
+  --color-grey-500: hsl(217, 19%, 35%);
+  --color-dark-blue: hsl(219, 29%, 14%);
+  --color-black: hsl(0, 0%, 7%);
+
+  --font-sans: 'Barlow Semi Condensed', sans-serif;
+
+  --text-base: 13px;
+  --text-xs: 11px;
+
+  --background-image-quote: url('images/bg-pattern-quotation.svg');
+
+  --shadow: 2rem 4rem 3rem rgba(0, 0, 0, 0.15);
+}
+
+@layer base {
+  h3 {
+    @apply text-xl/6 font-semibold;
+  }
+  span {
+    @apply text-xs;
+  }
+}
+
+.card {
+  @apply rounded-lg p-8 shadow-(--shadow);
+  header {
+    @apply flex items-center space-x-4;
+  }
+  img {
+    @apply h-7 w-7 rounded-full ring-2;
+  }
+  h4 {
+    @apply opacity-90;
+  }
+  span {
+    @apply opacity-50;
+  }
+  h3 {
+    @apply mt-4 opacity-90;
+  }
+}
+.testimonial {
+  @apply mt-4 leading-[1.4] opacity-70;
+}

@@ -1,0 +1,145 @@
+:root {
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+  --white: hsl(0, 0%, 100%);
+
+  --font-family: 'Manrope', sans-serif;
+  --font-size: 13px;
+  --font-size-title: 18px;
+
+  --space-xl: 36px;
+  --space-l: 32px;
+  --space: 24px;
+  --space-s: 16px;
+  --space-xs: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+button {
+  appearance: none;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+body {
+  /* display: grid; */
+  /* place-content: center; */
+  min-height: 100dvh;
+  font-family: var(--font-family);
+  font-weight: 500;
+  background: var(--light-grayish-blue);
+  color: var(--desaturated-dark-blue);
+
+  /* justify-content: center; */
+  padding-top: 74px;
+}
+
+.article {
+  margin: auto;
+  max-width: 328px;
+  background: var(--white);
+  border-radius: var(--space-xs);
+  overflow: hidden;
+  box-shadow: 0 32px 32px 0 rgba(0, 0, 0, 0.05);
+}
+.article_img {
+  aspect-ratio: 5/3.05;
+  object-fit: cover;
+  object-position: 0% 25%;
+}
+.article_content {
+  padding: var(--space-l);
+  padding-block: var(--space-xl) var(--space-s);
+  h1 {
+    font-size: var(--font-size-title);
+    letter-spacing: -0.05rem; /* fix */
+    margin-block-end: var(--space-s);
+  }
+  p {
+    letter-spacing: 0.015rem; /* fix */
+    line-height: 1.5;
+  }
+}
+.article_author {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--space-s);
+  padding: var(--space-s) var(--space-l);
+
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+.avatar {
+  width: 3rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.share {
+  margin-inline-start: auto;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--light-grayish-blue);
+  img {
+    margin: auto;
+  }
+}
+
+/* Links */
+.share-links {
+  display: none;
+  position: absolute;
+  inset: 0;
+  align-items: center;
+  gap: var(--space-s);
+  padding: var(--space-s) var(--space-l);
+  background: var(--very-dark-grayish-blue);
+  color: var(--white);
+  span {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: var(--light-grayish-blue);
+  }
+  a {
+    width: 1.5rem;
+  }
+  &.active {
+    display: flex;
+  }
+}
+
+/* Check if there's any 'active' class and apply style to share button */
+:has(.active) .share {
+  position: relative;
+  z-index: 1;
+  background: var(--desaturated-dark-blue);
+  img {
+    filter: brightness(0) invert(1);
+  }
+}

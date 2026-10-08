@@ -7,7 +7,7 @@
 
   --font-family: 'Manrope', sans-serif;
   --font-size: 0.8125rem;
-  --font-size-title: 17px;
+  --letter-spacing: 0.125rem;
 
   --size-xs: 1rem;
   --size-sm: 1.5rem;
@@ -15,7 +15,7 @@
   --size-lg: 2.25rem;
   --size-xl: 2.5rem;
 
-  --border-radius: 10px;
+  --border-radius: 0.675rem;
 }
 
 * {
@@ -42,7 +42,7 @@ body {
   font-family: var(--font-family);
   font-size: var(--font-size);
   font-weight: 400;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
   line-height: 1.5;
   background: var(--light-grayish-blue);
   color: var(--desaturated-dark-blue);
@@ -162,8 +162,8 @@ body {
   /* Tooltip on desktop */
   .share_links {
     inset: auto;
-    left: calc(100% - 56px);
-    bottom: calc(100% + var(--size-xs));
+    inset-inline-start: calc(100% - 56px);
+    inset-block-end: calc(100% + var(--size-xs));
     padding: 18px var(--size-xl);
     border-radius: var(--border-radius);
     translate: -50%;
@@ -171,8 +171,8 @@ body {
     &::after {
       content: '';
       position: absolute;
-      left: calc(50% - 13px);
-      bottom: -25px;
+      inset-inline-start: calc(50% - 13px);
+      inset-block-end: -25px;
       border: 13px solid transparent;
       border-block-start-color: var(--very-dark-grayish-blue);
     }
